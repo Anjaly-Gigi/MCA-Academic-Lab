@@ -1,0 +1,43 @@
+<html>
+ <body ><h1 style='color:blue' align="centre">MACE</h1>
+ 
+  <script type = "text/javascript">
+  
+    function repeat()
+    {
+       var sub = document.getElementById("T1").value;
+       var mark = document.getElementById("T2").value;
+       document.write("subject and mark is", +sub,mark);
+    }
+    function refresh()
+    {
+     document.getElementById("test").reset();
+    }
+   
+  </script>
+      <form id ="test">
+         <table border = 1 align = "center">
+            <tr>
+            <td> SUBJECT</td>
+            <td> <input type ="text" id ="T1"></td>
+            </tr>
+            
+            <tr>
+            <td> MARK</td>
+            <td> <input type = "text" id ="T2"></td>
+            </tr>
+            
+            <tr align = "center">
+            <td colspan ="2">
+            <input type = "button" value = "show" onclick = "repeat()">
+            <input type =  "button" value = "reset" onclick = "refresh()">
+            </td>
+            </tr>
+            
+         </table>
+      
+      
+      </form>
+     
+ </body>
+</html>

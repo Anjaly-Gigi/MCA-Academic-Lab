@@ -1,0 +1,45 @@
+<html>
+ <body>
+ 
+  <script type = "text/javascript">
+   
+   function ver()
+   {
+   if(document.forms.F1.N1.value == "")
+   {
+   window.alert("please provide data!!!");
+   document.forms.F1.N1.focus();
+   }
+   
+   if(document.forms.F1.N2.value == "")
+   {
+   window.alert("please provide data!!!");
+   document.forms.F1.N2.focus();
+   }}
+   
+  </script>
+   <form id ="F1" onsubmit="return ver()">
+         <table border = 1 align = "center">
+            <tr>
+            <td> SUBJECT 1</td>
+            <td> <input type ="text" id ="N1"></td>
+            </tr>
+            
+            <tr>
+            <td> MARK 1 </td>
+            <td> <input type = "text" name ="N2"></td>
+            </tr>
+            
+            <tr align = "center">
+            <td colspan ="2">
+            <input type = "submit" id = "T1" value = "confirm" />
+            </td>
+            </tr>
+     
+         </table>
+      
+      
+      </form>
+  
+ </body>
+</html>
