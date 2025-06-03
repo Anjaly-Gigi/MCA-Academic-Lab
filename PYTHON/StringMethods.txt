@@ -1,0 +1,93 @@
+# Python String Method
+
+str='    i love PYthon '
+
+#capitalize()-return first character in uppercase and rest in lowercase
+
+print(str.capitalize())             #I love python
+
+#center()-str.center(width, [fillchar])
+
+print(str.center(24,'*'))           #*****i love PYthon******
+
+#rjust()-returns the right-justified string within the given minimum width
+
+print(str.rjust(25,'*'))           #************i love PYthon
+
+
+#ljust() -returns the left-justified string within the given minimum width
+
+print(str.ljust(25,'*'))          #i love PYthon************
+
+#casefold()-converts all characters of the string into lowercase letters and returns a new string.
+
+print(str.casefold())             #i love python
+
+#swapcase()-returns the string by converting all the characters to their opposite letter case
+
+print(str.swapcase())            #I LOVE pyTHON
+
+#upper()-converts all lowercase characters in a string into uppercase characters and returns it
+#lower()-converts all uppercase characters in a string into lowercase characters and returns it.
+
+print(str.upper())           #I LOVE PYTHON
+print(str.lower())           #i love python
+
+#count() method returns the number of occurrences of a substring in the given string.
+
+s='pycharm python pysho'
+print(s.count('py'))       #3
+print(s.count('h'))        #3
+print(s.count('h',4,13))  #string.count(substring, start=..., end=...)   1
+
+#endswith()- return true if the string ends with the specified suffix
+print(str.endswith('thon'))      #True
+
+#expandtabs()-replace \t with whitespace acc to mentioned tabsize
+a='anjaly\tis\tgood\tgirl\t'
+print(a.expandtabs(10))      #anjaly    is        good      girl
+
+#encode() method returns an encoded version of the given string.
+
+msg='iloveu'
+msg_utf = msg.encode(encoding='utf-8',errors='strict')
+print(msg_utf)
+
+#find()- method returns the index of first occurrence of the substring (if found). If not found, it returns -1.
+print(str.find('thon'))   #9
+#rfind()-If substring exists inside the string, it returns the highest index where substring is found
+
+#format()
+print("{}'s age is {}".format('adam',25))
+print("{0}'s age is {1}".format('neha',44))
+
+#index()-similar to find() method only diff is find return -1 if substring not found but index() return valueerror exception
+s='python is fun'
+print(s.index('is'))
+
+# string join-join()
+l=['hi','hello']
+print(' '.join(l))
+
+t1=['1','2','3','4']
+sep=','
+print(sep.join(t1))
+
+sepr=''
+t2=('1','2','3','4')
+print(sepr.join(t2))
+
+s1='abc'
+s2='123'
+print(s1.join(s2))
+print(s2.join(s1))
+
+#hi hello
+#1,2,3,4
+#1234
+#1abc2abc3
+#a123b123c
+
+#lstrip
+print(str.lstrip())
+print(str.rstrip())
